@@ -1,0 +1,14 @@
+server:
+  port: 30000
+spring:
+  application:
+    name: thor
+eureka:
+  client:
+    service-url:
+      defaultZone: http://cat:20001/shield/eureka,http://dog:20002/shield/eureka
+  instance:
+    prefer-ip-address: true
+turbine:
+  app-config: captain
+  cluster-name-expression: "'default'"
